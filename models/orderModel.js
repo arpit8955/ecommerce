@@ -34,7 +34,6 @@ const orderSchema = new mongoose.Schema(
       enum: ["PENDING_PAYMENT", "PAID", "SHIPPED", "DELIVERED", "CANCELLED"],
       default: "PENDING_PAYMENT",
     },
-    // You might also want to add shippingAddress, etc.
   },
   { timestamps: true }
 );

@@ -3,7 +3,7 @@ const router = require("express").Router();
 const { getCart  ,addCartItems, removeCartItem} = require("../controllers/cartController");
 const isAuthorized = require("../middlewares/authMiddleware");
 const { isUser } = require("../middlewares/roleCheckMiddleware");
-// const { createValidate } = require("../validators/user");
+
 
 router.post("/add", isAuthorized, isUser, addCartItems);
 router.delete("/items/:productId", isAuthorized, isUser, removeCartItem);
