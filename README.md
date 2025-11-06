@@ -14,7 +14,7 @@ Login Details->
 
  E-commerce Backend API->
 
-This is the backend server for a robust and scalable e-commerce application, built with Node.js, Express, and MongoDB. It provides a complete set of RESTful APIs to manage users, products, shopping carts, and orders.
+This is the backend server for a robust and scalable e-commerce application, built with Node.js, Express, and MongoDB. It provides a complete set of RESTful APIs to manage users, products, shopping carts, and orders.And other than that i have also created a cron function which runs automatically every minute and checkes if any order is in pending state for more than 15 minutes if it finds any kind of order like this it cancells it and returs quantity back to the product again.
 
   Features->
 
