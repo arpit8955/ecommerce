@@ -1,3 +1,17 @@
+Postman Collection Link(for testing the apis) =>https://www.postman.com/yoursalon/workspace/test/collection/37142646-9572c1e8-0b08-494d-962e-021f450e18f1?action=share&creator=37142646
+
+Login Details->
+
+   For User
+    email=>arpit4672@gmail.com
+    password=>Arpit@2002
+   For Admin
+   email=>arpit1234@gmail.com
+    password=>Arpit@2002
+
+
+
+
  E-commerce Backend API->
 
 This is the backend server for a robust and scalable e-commerce application, built with Node.js, Express, and MongoDB. It provides a complete set of RESTful APIs to manage users, products, shopping carts, and orders.
