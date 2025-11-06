@@ -12,6 +12,7 @@ const userRoutes = require("./routes/authRoutes");
 const productRoutes = require("./routes/productRoutes");
 const cartRoutes = require("./routes/cartRoutes");
 const orderRoutes = require("./routes/orderRoutes");
+const adminRoutes = require("./routes/adminRoutes");
 const {findAndCancelOrders} = require("./controllers/orderController")
 
 
@@ -25,6 +26,7 @@ app.use("/api/auth", userRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/cart", cartRoutes);
 app.use("/api/order", orderRoutes);
+app.use("/api/admin", adminRoutes);
 
 cron.schedule("*/1 * * * *", async () => {
   await findAndCancelOrders();
