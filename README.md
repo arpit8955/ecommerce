@@ -26,13 +26,15 @@ This is the backend server for a robust and scalable e-commerce application, bui
 
 
 BASE_URL =https://ecommerce-1-mcj8.onrender.com
+
  API Endpoints->
 
 The API provides the following endpoints.
 
  Health Check->
 
-| Method | Endpoint | Description                   |
+| Method | Endpoint | Description                  
+
 | `GET`  | `/`      | Checks if the server is live. |
 
  Authentication (`/api/auth`)
