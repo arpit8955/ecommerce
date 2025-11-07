@@ -25,7 +25,7 @@ This is the backend server for a robust and scalable e-commerce application, bui
 - Automated Tasks: A scheduled job runs every minute to find and cancel orders that meet certain criteria (e.g., pending payment from last 15 minutes).
 
 
-
+BASE_URL =https://ecommerce-1-mcj8.onrender.com
  API Endpoints->
 
 The API provides the following endpoints.
@@ -44,24 +44,35 @@ The API provides the following endpoints.
  Products (`/api/products`)
 
 | Method   | Endpoint  | Description
-| `GET`    | `/allproducts`       | Fetches a list of all products. Can support filtering and pagination.         |
-| `POST`   | `/add`    | Creates a new product. (Typically restricted to admin users).                 |
-| `PUT`    | `/updateproduct/:id`  | Updates an existing product by its ID. (Typically restricted to admin users). |
-| `DELETE` | `/deleteproduct/:id`  | Deletes a product by its ID. (Typically restricted to admin users).           |
+
+| `GET`    | `/allproducts`       | Fetches a list of all products. Can support filtering and pagination. 
+
+| `POST`   | `/add`    | Creates a new product. (Typically restricted to admin users).                 
+
+| `PUT`    | `/updateproduct/:id`  | Updates an existing product by its ID. (Typically restricted to admin users). 
+
+| `DELETE` | `/deleteproduct/:id`  | Deletes a product by its ID. (Typically restricted to admin users).           
 
  Shopping Cart (`/api/cart`)
 
-| Method   | Endpoint      | Description                                     
-| `GET`    | `/getcart`         | Retrieves the current user's shopping cart.     
-| `POST`   | `/add`         | Adds a product to the cart.                     
+| Method   | Endpoint      | Description              
+
+| `GET`    | `/getcart`         | Retrieves the current user's shopping cart. 
+
+| `POST`   | `/add`         | Adds a product to the cart. 
+
 | `DELETE` | `/items/:productId` | Removes a specific item from the cart.          
 
  Orders (`/api/order`)
 
-| Method | Endpoint         | Description                                     
-| `POST` | `/checkout`            | Creates a new order from the items in the cart. 
-| `GET`  | `/`            | Retrieves a list of the current user's orders(order history).  |
+| Method | Endpoint         | Description      
+
+| `POST` | `/checkout`            | Creates a new order from the items in the cart.
+
+| `GET`  | `/`            | Retrieves a list of the current user's orders(order history).  
+
 | `GET`  | `/:id`        | Fetches details for a specific order by its ID. 
+
 | `POST`  | `/:id/pay`  | Pay the payment of a specific order                       
 
 
